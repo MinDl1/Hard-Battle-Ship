@@ -14,14 +14,14 @@ using namespace std;
 
 
 int main(int argc, const char * argv[]){
-    srand(time(NULL));
-    int num_1=rand()%8; //If u want u can take there ur values
-    int num_2=rand()%5; //If u want u can take there ur values
-    int num_3=rand()%4; //If u want u can take there ur values
-    int num_4=rand()%3; //If u want u can take there ur values
-    int size_numbers=num_1+num_2+num_3+num_4;
     string again="again";
-    while(again=="again"){
+    while(again=="again")
+        srand(time(NULL));
+        int num_1=rand()%8; //If u want u can take there ur values
+        int num_2=rand()%5; //If u want u can take there ur values
+        int num_3=rand()%4; //If u want u can take there ur values
+        int num_4=rand()%3; //If u want u can take there ur values
+        int size_numbers=num_1+num_2+num_3+num_4;
         cout<<"Do u want play with:\n1)player\n2)bot\n::";
         cin>>again;
         if(again=="1"||again=="1)"||again=="player"){
