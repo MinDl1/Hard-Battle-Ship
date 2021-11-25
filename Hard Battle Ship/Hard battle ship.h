@@ -44,6 +44,7 @@ public:
             }
         }
     }
+    ~war_map(){}
 //    Show_map
     void show_map(){
         int const sizelet=10;
