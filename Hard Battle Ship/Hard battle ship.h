@@ -142,6 +142,23 @@ public:
             }
         }
     }
+//    bot mind
+    int bot_mind(int a,int b,war_map obj){
+        int c=rand()%5;
+        if(c>0){
+            return fire(a, b, obj);
+        }
+        else if(c==0){
+            for(int i=1;i<11;i++){
+                for(int j=1;j<11;j++){
+                    if(map[i][j]==1){
+                        return fire(i, j, obj);
+                    }
+                }
+            }
+        }
+        return fire(a, b, obj);
+    }
 //    Set
     int set(int num,int a,int b){
         for(int i=0;i<sizearr;i++){
