@@ -17,9 +17,9 @@ int main(int argc, const char * argv[]){
     string again="again";
     while(again=="again")
         srand(time(NULL));
-        int num_1=rand()%8; //If u want u can take there ur values
-        int num_2=rand()%5; //If u want u can take there ur values
-        int num_3=rand()%4; //If u want u can take there ur values
+        int num_1=rand()%7; //If u want u can take there ur values
+        int num_2=rand()%4; //If u want u can take there ur values
+        int num_3=rand()%3; //If u want u can take there ur values
         int num_4=rand()%3; //If u want u can take there ur values
         int size_numbers=num_1+num_2+num_3+num_4;
         cout<<"Do u want play with:\n1)player\n2)bot\n::";
@@ -483,7 +483,7 @@ int main(int argc, const char * argv[]){
                 while(count2){
                     *b=rand()%size_map;
                     *a=rand()%size_map;
-                    *b=player1.fire(*a, *b,player2);
+                    *b=player1.bot_mind(*a, *b, player2);
                     if(*b==3){
                         count_fire2++;
                     }
