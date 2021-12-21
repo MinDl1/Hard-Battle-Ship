@@ -226,6 +226,7 @@ int main(int argc, const char * argv[]){
             delete [] numbers;
     //    Play
             bool count=true;
+            string some;
             string player;
             int count_fire1=0;
             int count_fire2=0;
@@ -259,6 +260,8 @@ int main(int argc, const char * argv[]){
                     }
                 }
                 cout<<"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
+                cout>>"You missed, Next player turn\nWrite something to continue";
+                cin>>some;
                 while(count2){
                     player2.show_warMap();
                     cout<<"Player2 turn\n";
